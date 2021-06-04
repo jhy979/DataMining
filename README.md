@@ -26,3 +26,7 @@ ___
 <br/><br/>
 <img src = https://user-images.githubusercontent.com/32920566/117388152-26878b00-af25-11eb-9d41-d356bd126212.JPG />
 다음과 같은 효율이 나왔습니다. 여기서 사용한 sklearn built-in data들은 사이즈가 작아서 금방 돌아갔지만, kaggle에서 데이터가 방대한 친구를 데려온 결과 SVM은 엄청난 시간이 걸렸습니다.( SVM은 마진까지 최대화해야하기 때문인가..)
+___
+## 과제4
+<br>
+파이토치를 사용하여
