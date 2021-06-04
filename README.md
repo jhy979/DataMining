@@ -26,7 +26,12 @@ ___
 <br/><br/>
 <img src = https://user-images.githubusercontent.com/32920566/117388152-26878b00-af25-11eb-9d41-d356bd126212.JPG />
 다음과 같은 효율이 나왔습니다. 여기서 사용한 sklearn built-in data들은 사이즈가 작아서 금방 돌아갔지만, kaggle에서 데이터가 방대한 친구를 데려온 결과 SVM은 엄청난 시간이 걸렸습니다.( SVM은 마진까지 최대화해야하기 때문인가..)
+
 ___
 ## 과제4
 <br>
-파이토치를 사용하여
+대표적인 이미지 데이터인 cifar10을 불러와서 분류하는 작업을 해봤습니다. MLP와 CNN을 구현해봤는데요, 아래 그림에서 정확도를 보실 수 있습니다.
+MLP에서 skip connection 방식으로 코드를 작성하였고, CNN은 ResNet 방식을 이용하였습니다. 처음엔 무슨 소리인지도 몰랐는데 몇 주 잡고 있다보니깐 이해가 되더라구요. 특히 ResNet 구조를 잘 설명한 블로그 글을 보니깐 어느정도 해결했습니다. 사실 제 코드는 제가 처음 짜보는거라 매우 불완전합니다. ModuleList로 block의 개수에 따라서 깔끔하게 짰어야했는데 그냥 Sequential로 작성한 부부도 있고... 그래서 조금 더 시간이 날 때 수정해보고, epoch를 늘리는 방식이 아니라 구조를 바꿔서 accuracy도 증가시켜봐야겠습니다. 근데 와.. 맨땅에 헤딩이였는데 역시 해보니깐 되긴하네요!
+
+<img src="https://user-images.githubusercontent.com/32920566/120741701-77909c00-c530-11eb-8f2d-70c1afa609a0.png" width="400px" height="600px"/><br>
+위의 표는 train data에서 뽑은 validation set으로 측정한거라 정확도가 높게 나온겁니다. 조금 overfitting 되어서 그런 감이 있나 싶긴했는데 다른 분들도 대부분 이런 형태로 그래프가 작성되더라구요. train에서 학습하고 train에서 뽑은거니 그럴 수 밖에 없지 않을까 싶긴합니다. 후 과제 어려웠다~
