@@ -35,3 +35,16 @@ MLP에서 skip connection 방식으로 코드를 작성하였고, CNN은 ResNet 
 
 <img src="https://user-images.githubusercontent.com/32920566/120741701-77909c00-c530-11eb-8f2d-70c1afa609a0.png" width="400px" height="600px"/><br>
 위의 표는 train data에서 뽑은 validation set으로 측정한거라 정확도가 높게 나온겁니다. 조금 overfitting 되어서 그런 감이 있나 싶긴했는데 다른 분들도 대부분 이런 형태로 그래프가 작성되더라구요. train에서 학습하고 train에서 뽑은거니 그럴 수 밖에 없지 않을까 싶긴합니다. 후 과제 어려웠다~
+
+___
+## 과제5
+<br>
+2020년 10월에 나온 따끈따끈한 Vision Transformer를 사용해봤습니다. 이미지 인식에서 요새 화제라고 하는데요, 역시나 역시나 어렵긴 했습니다.<br><br>
+
+![image](https://user-images.githubusercontent.com/32920566/120909713-cf571080-c6b2-11eb-996b-1be632c016f0.png) 
+<br><br>
+
+이해를 위해 이미지를 추가했습니다. 이미지를 여러 개의 패치로 쪼개고 마치 단어 다루는 것처럼 벡터화를 하는데 이를 flatten하여 사용합니다.<br>
+👇👇 실제 구현 accuracy입니다. 62%가 나왔네요. <br><br>
+<img src="https://user-images.githubusercontent.com/32920566/120909680-6e2f3d00-c6b2-11eb-9a7a-6d3ec8fa7445.png"/> <br>
+
