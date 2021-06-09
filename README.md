@@ -45,6 +45,16 @@ ___
 <br><br>
 
 이해를 위해 이미지를 추가했습니다. 이미지를 여러 개의 패치로 쪼개고 마치 단어 다루는 것처럼 벡터화를 하는데 이를 flatten하여 사용합니다.<br>
-👇👇 실제 구현 accuracy입니다. 62%가 나왔네요. <br><br>
+순서대로 설명을 해보겠습니다.
+1. self attention
+- 문장 사이 각 단어끼리 연관성을 파악하는 일입니다. 이미지에 있어서는 벡터끼리 dot product를 하고 softmax를 통해 연관성을 파악합니다.
+2. Multihead attention
+- self attention을 병력적으로 나누어 계산하는 과정입니다. Query, Value, Key 값의 차원을 맞춰주고 수정하는 일을 합니다.
+3. Positional Encoding
+- 순차적으로 입력된 값들을 상대적인 위치정보를 나타냅니다. Sin/Cos을 사용하여 -1 ~ 1 사이의 값을 가지게 됩니다.
+
+<br>
+
+👇👇 실제 구현 accuracy입니다. 62%가 나왔네요. 더 높이려고 parameter 튜닝도 해보고 했으나.. 일단 여기까지가 최고 accuracy네요 ㅠㅠ<br><br>
 <img src="https://user-images.githubusercontent.com/32920566/120909680-6e2f3d00-c6b2-11eb-9a7a-6d3ec8fa7445.png"/> <br>
 
